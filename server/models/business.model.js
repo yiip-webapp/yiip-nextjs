@@ -45,4 +45,7 @@ const BusinessSchema = new mongoose.Schema({
     }
 }, {timestamps: true});
 
-module.exports = mongoose.model('Business', BusinessSchema);
+
+const Business = mongoose.model('Business', BusinessSchema)
+module.exports = Business
+// I did change this part from Julie's original; maybe revert to original if this doesn't work
