@@ -53,11 +53,12 @@ function LandingPage(props) {
 
 <div className='nav-bar'>
 				<div className='nav-bar-component'>
-					<h1>yiip</h1>
+                <Link href = '/'><h1>yiip</h1></Link>
 					{/*Add map route later*/}
 					<Link href="#">Map</Link>
 					{/*Didn't quite understand this part, ask for elaboration later.*/}
 					<Link href="#">I'm feeling lucky</Link>
+                    <Link href="/add">Make a Business</Link>
 				</div>
 
 				<div className='nav-bar-component'>
