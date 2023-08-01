@@ -35,9 +35,25 @@ function Business({ params }) {
     }, [])
 
     return (
-        <div>
-            {/*Styling on this is VERY temporary, and just for my own use. Feel free to remove and use something better. and preferable not inline - Noah*/}
-            <Link href='/' className='logo' style={{color: `white`, width: `10%`}}>yiip</Link>
+        <div className = 'body-div'>
+
+<div className='nav-bar'>
+				<div className='nav-bar-component'>
+                <Link href = '/'><h1>yiip</h1></Link>
+					{/*Add map route later*/}
+					<Link href="#">Map</Link>
+					{/*Didn't quite understand this part, ask for elaboration later.*/}
+					<Link href="#">I'm feeling lucky</Link>
+                    <Link href="/add">Make a Business</Link>
+				</div>
+
+				<div className='nav-bar-component'>
+					{/*Not totally sure what this button does yet?*/}
+					<Link href="#">About</Link>
+					{/*Made this into one button, since our login/register page is all in one.*/}
+					<Link href="/welcome" className='sign-up-btn'>Sign up/Login</Link>
+				</div>
+			</div>
             <div className='details-page'>
                 <h1>{business.name}</h1>
                 <p>Business Name: {business.name}</p>
@@ -46,6 +62,7 @@ function Business({ params }) {
                 <p>Business Phone #: {business.phone}</p>
                 <p>Business Hours: {business.hours}</p>
                 <button onClick={deleteHandler}>Delete This Business</button>
+                <p><Link href={`/edit/${business._id}`}>Edit This Business</Link></p>
             </div>
         </div>
     )

@@ -4,11 +4,12 @@
 @tailwind utilities;
 
 html {
-    background-color: #061826;
+    background-color: #106eb6;
 }
 
 .body-div {
     color: white;
+    padding: 10px;
 }
 
 .sign-up-btn {
@@ -31,7 +32,7 @@ html {
 .nav-bar-component {
     display: flex;
     justify-content: space-around;
-    gap: 15px;
+    gap: 25px;
     align-items: center;
 }
 
@@ -51,7 +52,8 @@ html {
 
 .restaurant-carousel {
     display: flex;
-    margin: 250px auto 0;
+    margin: 25px auto 0;
+    padding: 10px;
 }
 
 .restaurant {
@@ -59,13 +61,14 @@ html {
     color: black;
     text-align: center;
     margin: 0 auto;
-    min-width: 175px;
+    min-width: 200px;
     min-height: 250px;
     border: solid 2px #124770;
+    padding: 10px;
 }
 
 .restaurant p {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -94,6 +97,7 @@ html {
     top: 0;
     left: 0;
 }
+
 
 .login-and-register {
     position: absolute;
@@ -147,7 +151,7 @@ form.register {
 .form-button {
     color: white;
     background-color: cornflowerblue;
-    border-radius: 55px;
+    border-radius: 55px solid black;
     padding: 5px;
 }
 
